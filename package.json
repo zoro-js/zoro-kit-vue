@@ -47,6 +47,7 @@
     "vuex-router-sync": "^3.0.0"
   },
   "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.3",
     "zoro-kit": "0.0.9"
   }
 }
