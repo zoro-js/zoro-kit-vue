@@ -5,7 +5,7 @@ webpackJsonp([0,1],[
   \*******************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';\n\n__webpack_require__(/*! module/common */ 2);\n\nwindow.vm = new Vue({\n  el: '#app',\n  data: {\n    message: 'Hello Vue',\n    firstname: 'Yingya',\n    lastname: 'Zhang',\n    newTodo: '',\n    todos: [{ text: 'Learn JavaScript' }, { text: 'Learn Vue' }, { text: 'Build something awesome' }]\n  },\n  computed: {\n    reversedMessage: function reversedMessage() {\n      return this.message.split('').reverse().join('');\n    },\n\n    fullname: {\n      get: function get() {\n        return this.firstname + ' ' + this.lastname;\n      },\n      set: function set(name) {\n        var names = name.split(' ');\n        this.firstname = names[0];\n        this.lastname = names[1];\n      }\n    }\n  },\n  methods: {\n    reverseMessage: function reverseMessage() {\n      this.message = this.message.split('').reverse().join('');\n    },\n    addTodo: function addTodo() {\n      var todo = this.newTodo.trim();\n      if (todo) {\n        this.todos.push({ text: todo });\n        this.newTodo = '';\n      }\n    },\n    removeTodo: function removeTodo(index) {\n      this.todos.splice(index, 1);\n    }\n  }\n});\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! vuejs */ 1)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/entry/hello.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/entry/hello.js?");
+	eval("'use strict';\n\n__webpack_require__(/*! module/common */ 2);\n\n__webpack_require__(/*! module/hello/hello */ 4);\n\n__webpack_require__(/*! module/hello/class-style */ 5);\n\n__webpack_require__(/*! module/hello/if-show-else */ 6);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/entry/hello.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/entry/hello.js?");
 
 /***/ },
 /* 1 */
@@ -24,6 +24,34 @@ webpackJsonp([0,1],[
 /***/ function(module, exports) {
 
 	eval("\"use strict\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/module/common.js\n ** module id = 2\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/module/common.js?");
+
+/***/ },
+/* 3 */,
+/* 4 */
+/*!**************************************!*\
+  !*** ./src/js/module/hello/hello.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';\n\nvar tpl = '\\n  <div class=\"container-fluid m-a-1\">\\n    <div>\\n      <p><input v-model=\"message\"></p>\\n      <p>Original message: {{message}}</p>\\n      <p>Computed Reversed Message: {{reversedMessage}}</p>\\n      <p>\\n        <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"reverseMessage\">Reverse Message</button>\\n      </p>\\n    </div>\\n    <div class=\"m-t-1\">\\n      <input v-model=\"firstname\">\\n      <input v-model=\"lastname\">\\n      <input v-model=\"fullname\">\\n    </div>\\n    <div class=\"m-t-1\">\\n      <input v-model=\"newTodo\" @keyup.enter=\"addTodo\" placeholder=\"newTodo\">\\n      <ul>\\n        <li v-for=\"(todo, index) in todos\">\\n          <span>{{todo.text}}</span>\\n          <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"removeTodo(index)\">X</button>\\n        </li>\\n      </ul>\\n    </div>\\n  </div>\\n';\n\nwindow.vmHello = new Vue({\n  template: tpl,\n  data: {\n    message: 'Hello Vue',\n    firstname: 'Yingya',\n    lastname: 'Zhang',\n    newTodo: '',\n    todos: [{ text: 'Learn JavaScript' }, { text: 'Learn Vue' }, { text: 'Build something awesome' }]\n  },\n  computed: {\n    reversedMessage: function reversedMessage() {\n      return this.message.split('').reverse().join('');\n    },\n\n    fullname: {\n      get: function get() {\n        return this.firstname + ' ' + this.lastname;\n      },\n      set: function set(name) {\n        var names = name.split(' ');\n        this.firstname = names[0];\n        this.lastname = names[1];\n      }\n    }\n  },\n  methods: {\n    reverseMessage: function reverseMessage() {\n      this.message = this.message.split('').reverse().join('');\n    },\n    addTodo: function addTodo() {\n      var todo = this.newTodo.trim();\n      if (todo) {\n        this.todos.push({ text: todo });\n        this.newTodo = '';\n      }\n    },\n    removeTodo: function removeTodo(index) {\n      this.todos.splice(index, 1);\n    }\n  }\n}).$mount('#hello');\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! vuejs */ 1)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/module/hello/hello.js\n ** module id = 4\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/module/hello/hello.js?");
+
+/***/ },
+/* 5 */
+/*!********************************************!*\
+  !*** ./src/js/module/hello/class-style.js ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';\n\nvar tpl = '\\n  <div class=\"container-fluid m-a-1\">\\n    <div class=\"static\" :class=\"{active: isActive, \\'text-danger\\': hasError}\">class object</div>\\n    <div :class=\"classObject\">class - data object</div>\\n    <div :class=\"computedClassObject\">class - computed object</div>\\n    <div :class=\"[activeClass, errorClass]\">class array</div>\\n    <div :class=\"[isActive ? activeClass : \\'\\', errorClass]\">class array with ternary</div>\\n    <div :class=\"[{active: isActive}, errorClass]\">class array with object</div>\\n    <div :style=\"{color: activeColor, fontSize: fontSize + \\'px\\'}\">style object</div>\\n    <div :style=\"styleObject\">style - data object</div>\\n    <div :style=\"computedStyleObject\">style - computed object</div>\\n    <div :style=\"[baseStyles, overridingStyles]\">style array</div>\\n  </div>\\n';\n\nwindow.vmClassStyle = new Vue({\n  template: tpl,\n  data: {\n    isActive: true,\n    hasError: false,\n    classObject: {\n      active: true,\n      'text-danger': false\n    },\n    activeClass: 'active',\n    errorClass: 'text-danger',\n    activeColor: 'teal',\n    fontSize: 30,\n    styleObject: {\n      color: 'teal',\n      fontSize: '30px'\n    },\n    baseStyles: {\n      color: 'teal',\n      fontSize: '12px'\n    },\n    overridingStyles: {\n      fontSize: '30px',\n      fontWeight: 'bold'\n    }\n  },\n  computed: {\n    computedClassObject: function computedClassObject() {\n      return {\n        active: this.isActive && !this.error,\n        'text-danger': this.error && this.error.type === 'fatal'\n      };\n    },\n    computedStyleObject: function computedStyleObject() {\n      return {\n        color: 'teal',\n        fontSize: '30px'\n      };\n    }\n  }\n}).$mount('#class-style');\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! vuejs */ 1)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/module/hello/class-style.js\n ** module id = 5\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/module/hello/class-style.js?");
+
+/***/ },
+/* 6 */
+/*!*********************************************!*\
+  !*** ./src/js/module/hello/if-show-else.js ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';\n\nvar tpl = '\\n  <div class=\"container-fluid m-a-1\">\\n    <h1 v-if=\"ok\">ok</h1>\\n    <h1 v-if=\"even\">even</h1>\\n    <h1 v-else>odd</h1>\\n    <template v-if=\"ok\">\\n      <h1>Title</h1>\\n      <p>Paragraph 1</p>\\n      <p>Paragraph 2</p>\\n    </template>\\n    <h1 v-show=\"ok\">ok</h1>\\n    <h1 v-show=\"even\">even</h1>\\n    <h1 v-show=\"!even\">odd</h1>\\n  </div>\\n';\n\nwindow.vmIfShowElse = new Vue({\n  template: tpl,\n  data: {\n    ok: true,\n    even: false\n  }\n}).$mount('#if-show-else');\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! vuejs */ 1)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/module/hello/if-show-else.js\n ** module id = 6\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/module/hello/if-show-else.js?");
 
 /***/ }
 ]);
