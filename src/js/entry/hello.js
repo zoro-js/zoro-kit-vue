@@ -1,15 +1,32 @@
 import 'module/common'
 
-window.app = new Vue({
+window.vm = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue',
+    firstname: 'Yingya',
+    lastname: 'Zhang',
     newTodo: '',
     todos: [
       {text: 'Learn JavaScript'},
       {text: 'Learn Vue'},
       {text: 'Build something awesome'}
     ]
+  },
+  computed: {
+    reversedMessage () {
+      return this.message.split('').reverse().join('')
+    },
+    fullname: {
+      get () {
+        return this.firstname + ' ' + this.lastname
+      },
+      set (name) {
+        const names = name.split(' ')
+        this.firstname = names[0]
+        this.lastname = names[1]
+      }
+    }
   },
   methods: {
     reverseMessage () {
