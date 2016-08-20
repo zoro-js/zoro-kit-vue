@@ -14,6 +14,8 @@
 - declarative imperative
 - https://github.com/mzabriskie/axios
 - http://www.w3.org/TR/custom-elements/#concepts
+- event modifiers: stop, prevent, capture, self
+- key modifiers
 
 - vue-validator https://github.com/vuejs/vue-validator
 - babel-plugin-transform-vue-jsx https://github.com/vuejs/babel-plugin-transform-vue-jsx

@@ -5,7 +5,7 @@ webpackJsonp([0,1],[
   \*******************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(/*! module/common */ 2);\n\n__webpack_require__(/*! module/hello/hello */ 4);\n\n__webpack_require__(/*! module/hello/class-style */ 5);\n\n__webpack_require__(/*! module/hello/if-show-else */ 6);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/entry/hello.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/entry/hello.js?");
+	eval("'use strict';\n\n__webpack_require__(/*! module/common */ 2);\n\n__webpack_require__(/*! module/hello/hello */ 4);\n\n__webpack_require__(/*! module/hello/class-style */ 5);\n\n__webpack_require__(/*! module/hello/if-show-else */ 6);\n\n__webpack_require__(/*! module/hello/event */ 7);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/entry/hello.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/entry/hello.js?");
 
 /***/ },
 /* 1 */
@@ -52,6 +52,15 @@ webpackJsonp([0,1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	eval("/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';\n\nvar tpl = '\\n  <div class=\"container-fluid m-a-1\">\\n    <h1 v-if=\"ok\">ok</h1>\\n    <h1 v-if=\"even\">even</h1>\\n    <h1 v-else>odd</h1>\\n    <template v-if=\"ok\">\\n      <h1>Title</h1>\\n      <p>Paragraph 1</p>\\n      <p>Paragraph 2</p>\\n    </template>\\n    <h1 v-show=\"ok\">ok</h1>\\n    <h1 v-show=\"even\">even</h1>\\n    <h1 v-show=\"!even\">odd</h1>\\n  </div>\\n';\n\nwindow.vmIfShowElse = new Vue({\n  template: tpl,\n  data: {\n    ok: true,\n    even: false\n  }\n}).$mount('#if-show-else');\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! vuejs */ 1)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/module/hello/if-show-else.js\n ** module id = 6\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/module/hello/if-show-else.js?");
+
+/***/ },
+/* 7 */
+/*!**************************************!*\
+  !*** ./src/js/module/hello/event.js ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("/* WEBPACK VAR INJECTION */(function(Vue) {'use strict';\n\nvar tpl = '\\n  <div class=\"container-fluid m-a-1\">\\n    <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"counter++\">+1</button>\\n    <p>The button above has been clicked {{counter}} times</p>\\n    <p>\\n      <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"greet\">Greet</button>\\n      <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"say(\\'hi\\')\">Say hi</button>\\n      <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"say(\\'what\\')\">Say what</button>\\n      <button type=\"button\" class=\"btn btn-outline-primary\" @click=\"warn(\\'Form cannot be submitted yet.\\', $event)\">Submit</button>\\n    </p>\\n    <p>\\n      <a href=\"https://www.baidu.com\" @click.prevent>baidu</a>\\n      <form @submit.prevent.stop></form>\\n      <div @click.self=\"\"></div>\\n      <input type=\"text\" class=\"ipt\" @keyup.enter=\"say(\\'enter\\')\">\\n      <input type=\"text\" class=\"ipt\" @keyup.v=\"say(\\'That is the first letter in Vue\\')\">\\n    </p>\\n  </div>\\n';\n\nwindow.vmEvent = new Vue({\n  template: tpl,\n  data: {\n    counter: 0,\n    name: 'zyy'\n  },\n  methods: {\n    greet: function greet() {\n      alert('Hello ' + this.name);\n    },\n    say: function say(msg) {\n      alert(msg);\n    },\n    warn: function warn(msg, event) {\n      if (event) {\n        event.preventDefault();\n      }\n      alert(msg);\n    }\n  }\n}).$mount('#event');\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! vuejs */ 1)))\n\n/*****************\n ** WEBPACK FOOTER\n ** ./src/js/module/hello/event.js\n ** module id = 7\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./src/js/module/hello/event.js?");
 
 /***/ }
 ]);
