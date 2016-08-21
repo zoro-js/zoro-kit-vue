@@ -1,4 +1,4 @@
-const tpl = `
+<template lang="html">
   <div class="container-fluid m-a-1">
     <button type="button" class="btn btn-outline-primary" @click="counter++">+1</button>
     <p>The button above has been clicked {{counter}} times</p>
@@ -16,13 +16,15 @@ const tpl = `
       <input type="text" class="ipt" @keyup.v="say('That is the first letter in Vue')">
     </p>
   </div>
-`
+</template>
 
-window.vmEvent = new Vue({
-  template: tpl,
-  data: {
-    counter: 0,
-    name: 'zyy'
+<script>
+export default {
+  data () {
+    return {
+      counter: 0,
+      name: 'zyy'
+    }
   },
   methods: {
     greet () {
@@ -38,4 +40,5 @@ window.vmEvent = new Vue({
       alert(msg)
     }
   }
-}).$mount('#event')
+}
+</script>

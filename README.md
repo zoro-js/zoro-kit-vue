@@ -12,10 +12,11 @@
 - SPA https://en.wikipedia.org/wiki/Single-page_application
 - shorthand, v-bind:attribute -> :attribute, v-on:click -> @click
 - declarative imperative
-- https://github.com/mzabriskie/axios
 - http://www.w3.org/TR/custom-elements/#concepts
 - event modifiers: stop, prevent, capture, self
 - key modifiers
+- http://vue-loader.vuejs.org/en/start/spec.html
+- https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md
 
 - vue-validator https://github.com/vuejs/vue-validator
 - babel-plugin-transform-vue-jsx https://github.com/vuejs/babel-plugin-transform-vue-jsx

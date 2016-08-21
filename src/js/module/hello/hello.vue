@@ -1,4 +1,4 @@
-const tpl = `
+<template lang="html">
   <div class="container-fluid m-a-1">
     <div>
       <p><input v-model="message"></p>
@@ -23,20 +23,22 @@ const tpl = `
       </ul>
     </div>
   </div>
-`
+</template>
 
-window.vmHello = new Vue({
-  template: tpl,
-  data: {
-    message: 'Hello Vue',
-    firstname: 'Yingya',
-    lastname: 'Zhang',
-    newTodo: '',
-    todos: [
-      {text: 'Learn JavaScript'},
-      {text: 'Learn Vue'},
-      {text: 'Build something awesome'}
-    ]
+<script>
+export default {
+  data () {
+    return {
+      message: 'Hello Vue',
+      firstname: 'Yingya',
+      lastname: 'Zhang',
+      newTodo: '',
+      todos: [
+        {text: 'Learn JavaScript'},
+        {text: 'Learn Vue'},
+        {text: 'Build something awesome'}
+      ]
+    }
   },
   computed: {
     reversedMessage () {
@@ -68,4 +70,5 @@ window.vmHello = new Vue({
       this.todos.splice(index, 1)
     }
   }
-}).$mount('#hello')
+}
+</script>

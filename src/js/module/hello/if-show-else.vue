@@ -1,4 +1,4 @@
-const tpl = `
+<template lang="html">
   <div class="container-fluid m-a-1">
     <h1 v-if="ok">ok</h1>
     <h1 v-if="even">even</h1>
@@ -12,12 +12,15 @@ const tpl = `
     <h1 v-show="even">even</h1>
     <h1 v-show="!even">odd</h1>
   </div>
-`
+</template>
 
-window.vmIfShowElse = new Vue({
-  template: tpl,
-  data: {
-    ok: true,
-    even: false
+<script>
+export default {
+  data () {
+    return {
+      ok: true,
+      even: false
+    }
   }
-}).$mount('#if-show-else')
+}
+</script>

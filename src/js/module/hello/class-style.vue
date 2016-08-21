@@ -1,4 +1,4 @@
-const tpl = `
+<template lang="html">
   <div class="container-fluid m-a-1">
     <div class="static" :class="{active: isActive, 'text-danger': hasError}">class object</div>
     <div :class="classObject">class - data object</div>
@@ -11,32 +11,34 @@ const tpl = `
     <div :style="computedStyleObject">style - computed object</div>
     <div :style="[baseStyles, overridingStyles]">style array</div>
   </div>
-`
+</template>
 
-window.vmClassStyle = new Vue({
-  template: tpl,
-  data: {
-    isActive: true,
-    hasError: false,
-    classObject: {
-      active: true,
-      'text-danger': false
-    },
-    activeClass: 'active',
-    errorClass: 'text-danger',
-    activeColor: 'teal',
-    fontSize: 30,
-    styleObject: {
-      color: 'teal',
-      fontSize: '30px'
-    },
-    baseStyles: {
-      color: 'teal',
-      fontSize: '12px'
-    },
-    overridingStyles: {
-      fontSize: '30px',
-      fontWeight: 'bold'
+<script>
+export default {
+  data () {
+    return {
+      isActive: true,
+      hasError: false,
+      classObject: {
+        active: true,
+        'text-danger': false
+      },
+      activeClass: 'active',
+      errorClass: 'text-danger',
+      activeColor: 'teal',
+      fontSize: 30,
+      styleObject: {
+        color: 'teal',
+        fontSize: '30px'
+      },
+      baseStyles: {
+        color: 'teal',
+        fontSize: '12px'
+      },
+      overridingStyles: {
+        fontSize: '30px',
+        fontWeight: 'bold'
+      }
     }
   },
   computed: {
@@ -53,4 +55,5 @@ window.vmClassStyle = new Vue({
       }
     }
   }
-}).$mount('#class-style')
+}
+</script>

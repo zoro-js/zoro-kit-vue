@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/zoro-js/zoro-kit-vue#readme",
   "dependencies": {
-    "vue": "^2.0.0-rc.2",
+    "vue": "^2.0.0-rc.3",
     "vue-loader": "^9.3.2",
     "vue-router": "^2.0.0-rc.3",
     "vuex": "^2.0.0-rc.5",
@@ -48,6 +48,6 @@
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.3",
-    "zoro-kit": "0.0.9"
+    "zoro-kit": "0.0.16"
   }
 }
