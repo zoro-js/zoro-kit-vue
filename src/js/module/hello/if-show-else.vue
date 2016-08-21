@@ -1,16 +1,18 @@
 <template lang="html">
   <div class="container-fluid m-a-1">
-    <h1 v-if="ok">ok</h1>
-    <h1 v-if="even">even</h1>
-    <h1 v-else>odd</h1>
+    <h1>if show else</h1>
+    <p v-if="ok">ok</p>
+    <p v-if="even">even</p>
+    <p v-else>odd</p>
     <template v-if="ok">
-      <h1>Title</h1>
+      <p>Title</p>
       <p>Paragraph 1</p>
       <p>Paragraph 2</p>
     </template>
-    <h1 v-show="ok">ok</h1>
-    <h1 v-show="even">even</h1>
-    <h1 v-show="!even">odd</h1>
+    <p v-show="ok">ok</p>
+    <p v-show="even">even</p>
+    <p v-show="!even">odd</p>
+    <hr>
   </div>
 </template>
 

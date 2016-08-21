@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="container-fluid m-a-1">
+    <h1>class style</h1>
     <div class="static" :class="{active: isActive, 'text-danger': hasError}">class object</div>
     <div :class="classObject">class - data object</div>
     <div :class="computedClassObject">class - computed object</div>
@@ -10,6 +11,7 @@
     <div :style="styleObject">style - data object</div>
     <div :style="computedStyleObject">style - computed object</div>
     <div :style="[baseStyles, overridingStyles]">style array</div>
+    <hr>
   </div>
 </template>
 

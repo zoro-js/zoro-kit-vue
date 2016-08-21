@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="container-fluid m-a-1">
-    <h1>foo</h1>
-    <p>{{greeting}} world!</p>
+    <h1>Component</h1>
+    A custom component!
     <hr>
   </div>
 </template>
@@ -10,7 +10,6 @@
 export default {
   data () {
     return {
-      greeting: 'hello'
     }
   }
 }

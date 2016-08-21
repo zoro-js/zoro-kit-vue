@@ -15,7 +15,7 @@
     "build": "run-p -lns build:js build:css",
     "build:favicon": "node build/favicon.js",
     "build:css": "postcss --config node_modules/zoro-kit/build/postcss.js",
-    "build:js": "webpack --config node_modules/zoro-kit/build/webpack.config.app.js",
+    "build:js": "webpack",
     "build:js:stats": "npm run build:js -- --profile --json > dist/webpack-stats.json",
     "watch": "run-p watch:*",
     "watch:css": "npm run build:css --silent -- --watch",
@@ -40,6 +40,9 @@
   },
   "homepage": "https://github.com/zoro-js/zoro-kit-vue#readme",
   "dependencies": {
+    "babel-helper-vue-jsx-merge-props": "^2.0.1",
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "babel-plugin-transform-vue-jsx": "^3.1.0",
     "vue": "^2.0.0-rc.3",
     "vue-loader": "^9.3.2",
     "vue-router": "^2.0.0-rc.3",
@@ -48,6 +51,6 @@
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.3",
-    "zoro-kit": "0.0.16"
+    "zoro-kit": "0.0.21"
   }
 }

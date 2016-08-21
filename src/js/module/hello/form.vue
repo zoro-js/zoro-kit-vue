@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="container-fluid m-a-1">
+    <h1>form</h1>
     <p>
       <input type="text" class="ipt" v-model="msg" placeholder="enter message">
       Message is: {{msg}}
@@ -37,6 +38,7 @@
       </select>
       selecteds is: {{selecteds}}
     </p>
+    <hr>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="container-fluid m-a-1">
+    <h1>hello</h1>
     <div>
       <p><input v-model="message"></p>
       <p>Original message: {{message}}</p>
@@ -22,6 +23,7 @@
         </li>
       </ul>
     </div>
+    <hr>
   </div>
 </template>
 

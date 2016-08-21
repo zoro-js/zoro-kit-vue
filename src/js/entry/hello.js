@@ -6,15 +6,47 @@ import IfShowElse from 'module/hello/if-show-else'
 import Event from 'module/hello/event'
 import Form from 'module/hello/form'
 
+import MyComponent from 'component/my-component'
+import Counter from 'component/counter'
+import AnchoredHeading from 'component/anchored-heading'
+
 window.vm = new Vue({
-  render (c) {
-    return c('div', [
-      c(Foo),
-      c(Hello),
-      c(ClassStyle),
-      c(IfShowElse),
-      c(Event),
-      c(Form)
-    ])
+  render (h) {
+    return (
+      <div>
+        <Foo/>
+        <Hello/>
+        <ClassStyle/>
+        <IfShowElse/>
+        <Event/>
+        <Form/>
+        <MyComponent/>
+        <Counter/>
+        <Counter/>
+        <Counter/>
+        <hr/>
+        <AnchoredHeading level={3}>
+          Hello world!
+        </AnchoredHeading>
+      </div>
+    )
+    // return h('div', [
+    //   h(Foo),
+    //   h(Hello),
+    //   h(ClassStyle),
+    //   h(IfShowElse),
+    //   h(Event),
+    //   h(Form),
+    //   h(MyComponent),
+    //   h(Counter),
+    //   h(Counter),
+    //   h(Counter),
+    //   h('hr'),
+    //   h(AnchoredHeading, {
+    //     props: {
+    //       level: 3
+    //     }
+    //   }, 'Hello world!')
+    // ])
   }
 }).$mount('#app')
