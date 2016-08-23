@@ -14,39 +14,21 @@ window.vm = new Vue({
   render (h) {
     return (
       <div>
-        <Foo/>
-        <Hello/>
-        <ClassStyle/>
-        <IfShowElse/>
-        <Event/>
-        <Form/>
-        <MyComponent/>
-        <Counter/>
-        <Counter/>
-        <Counter/>
-        <hr/>
+        <Foo />
+        <Hello />
+        <ClassStyle />
+        <IfShowElse />
+        <Event />
+        <Form />
+        <MyComponent />
+        <Counter />
+        <Counter />
+        <Counter />
+        <hr />
         <AnchoredHeading level={3}>
           Hello world!
         </AnchoredHeading>
       </div>
     )
-    // return h('div', [
-    //   h(Foo),
-    //   h(Hello),
-    //   h(ClassStyle),
-    //   h(IfShowElse),
-    //   h(Event),
-    //   h(Form),
-    //   h(MyComponent),
-    //   h(Counter),
-    //   h(Counter),
-    //   h(Counter),
-    //   h('hr'),
-    //   h(AnchoredHeading, {
-    //     props: {
-    //       level: 3
-    //     }
-    //   }, 'Hello world!')
-    // ])
   }
 }).$mount('#app')

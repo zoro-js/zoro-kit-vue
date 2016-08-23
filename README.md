@@ -55,11 +55,10 @@ key, ref, slot
 # lint
 
 - http://vue-loader.vuejs.org/en/workflow/linting.html
-- https://github.com/Twiknight/eslint-plugin-vue
-- 装了 eslint-plugin-vue 之后 eslint-loader 就可以正常工作了
 - https://github.com/hedefalk/atom-vue/issues/16#issuecomment-177169198
 - https://github.com/BenoitZugmeyer/eslint-plugin-html
-- 只用设置 lint HTML files 即可, 不用安装 eslint-plugin-html
+- 装了 eslint-plugin-html 之后 eslint-loader 就可以正常工作了
+- atom 里面设置 lint HTML files
 
 - vue-validator https://github.com/vuejs/vue-validator
 - babel-plugin-transform-vue-jsx https://github.com/vuejs/babel-plugin-transform-vue-jsx

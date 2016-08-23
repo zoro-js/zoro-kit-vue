@@ -9,21 +9,28 @@ const getChildrenTextContent = function (children) {
 
 export default {
   render (h) {
+    const tagName = 'h' + this.level
     const headingId = getChildrenTextContent(this.$slots.default)
       .toLowerCase()
       .replace(/\W/g, '-')
       .replace(/(^-|-$)/g, '')
-
-    return (
-      <div
-        id={headingId}
-        class={['container-fluid', 'm-a-1']}>
+    return h(
+      tagName,
+      {
+        attrs: {
+          id: headingId
+        },
+        class: ['container-fluid', 'm-a-1']
+      },
+      [
+        (
         <a
           name={headingId}
           href={'#' + headingId}>
           {this.$slots.default}
         </a>
-      </div>
+        )
+      ]
     )
   },
   props: {
