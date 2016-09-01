@@ -1,0 +1,50 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #2c3e50;
+}
+
+#app {
+  padding: 0 20px;
+}
+
+ul {
+  line-height: 1.5em;
+  padding-left: 1.5em;
+}
+
+a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4fc08d;
+}
+
+a.router-link-active {
+  color: #f66;
+}
+
+li.router-link-active a {
+  color: #f66;
+}
+
+.views {
+  min-height: 100vh;
+}
+
+.parent {
+  border: 1px solid #f66;
+  padding: 10px;
+}
+.child {
+  border: 1px solid #f66;
+  padding: 10px 20px;
+}
+
+pre.route {
+  height: 260px;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9wb3N0Y3NzL2VudHJ5L3JvdXRlci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwySkFBMko7RUFDM0osZUFBZTtDQUNoQjs7QUFFRDtFQUNFLGdCQUFnQjtDQUNqQjs7QUFFRDtFQUNFLG1CQUFtQjtFQUNuQixvQkFBb0I7Q0FDckI7O0FBRUQ7RUFDRSxlQUFlO0VBQ2Ysc0JBQXNCO0NBQ3ZCOztBQUVEO0VBQ0UsZUFBZTtDQUNoQjs7QUFFRDtFQUNFLFlBQVk7Q0FDYjs7QUFFRDtFQUNFLFlBQVk7Q0FDYjs7QUFFRDtFQUNFLGtCQUFrQjtDQUNuQjs7QUFFRDtFQUNFLHVCQUF1QjtFQUN2QixjQUFjO0NBQ2Y7QUFDRDtFQUNFLHVCQUF1QjtFQUN2QixtQkFBbUI7Q0FDcEI7O0FBRUQ7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0NBQ2xCIiwiZmlsZSI6InJvdXRlci5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLCBib2R5IHtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgXCJTZWdvZSBVSVwiLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYsIFwiQXBwbGUgQ29sb3IgRW1vamlcIiwgXCJTZWdvZSBVSSBFbW9qaVwiLCBcIlNlZ29lIFVJIFN5bWJvbFwiO1xuICBjb2xvcjogIzJjM2U1MDtcbn1cblxuI2FwcCB7XG4gIHBhZGRpbmc6IDAgMjBweDtcbn1cblxudWwge1xuICBsaW5lLWhlaWdodDogMS41ZW07XG4gIHBhZGRpbmctbGVmdDogMS41ZW07XG59XG5cbmEge1xuICBjb2xvcjogIzdmOGM4ZDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG5hOmhvdmVyIHtcbiAgY29sb3I6ICM0ZmMwOGQ7XG59XG5cbmEucm91dGVyLWxpbmstYWN0aXZlIHtcbiAgY29sb3I6ICNmNjY7XG59XG5cbmxpLnJvdXRlci1saW5rLWFjdGl2ZSBhIHtcbiAgY29sb3I6ICNmNjY7XG59XG5cbi52aWV3cyB7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xufVxuXG4ucGFyZW50IHtcbiAgYm9yZGVyOiAxcHggc29saWQgI2Y2NjtcbiAgcGFkZGluZzogMTBweDtcbn1cbi5jaGlsZCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNmNjY7XG4gIHBhZGRpbmc6IDEwcHggMjBweDtcbn1cblxucHJlLnJvdXRlIHtcbiAgaGVpZ2h0OiAyNjBweDtcbiAgb3ZlcmZsb3cteTogYXV0bztcbn1cbiJdfQ== */
