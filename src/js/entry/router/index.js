@@ -8,7 +8,7 @@ window.Vue = Vue
 Vue.use(VueRouter)
 
 // 2. Define route components
-import App from './App'
+import App from 'module/router/App'
 const Home = {template: '<div>Home</div>'}
 const Foo = {template: '<div>Foo</div>'}
 const Bar = {template: '<div>Bar</div>'}
