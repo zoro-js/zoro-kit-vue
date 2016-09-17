@@ -62,3 +62,9 @@ key, ref, slot
 
 - vue-validator https://github.com/vuejs/vue-validator
 - babel-plugin-transform-vue-jsx https://github.com/vuejs/babel-plugin-transform-vue-jsx
+
+# vuex-router-sync
+
+// Do not sync https://github.com/vuejs/vuex/issues/285
+// import {sync} from 'vuex-router-sync'
+// sync(store, router)
