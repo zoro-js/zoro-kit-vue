@@ -1,6 +1,6 @@
 {
   "name": "zoro-kit-vue",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -44,9 +44,9 @@
     "babel-plugin-syntax-jsx": "^6.13.0",
     "babel-plugin-transform-vue-jsx": "^3.1.0",
     "eslint-config-standard-jsx": "^3.2.0",
-    "vue": "^2.0.1",
-    "vue-loader": "^9.5.1",
-    "vue-router": "^2.0.0",
+    "vue": "^2.0.3",
+    "vue-loader": "^9.7.0",
+    "vue-router": "^2.0.1",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^3.0.0"
   },
