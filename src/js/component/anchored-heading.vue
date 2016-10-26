@@ -24,11 +24,11 @@ export default {
       },
       [
         (
-        <a
-          name={headingId}
-          href={'#' + headingId}>
-          {this.$slots.default}
-        </a>
+          <a
+            name={headingId}
+            href={'#' + headingId}>
+            {this.$slots.default}
+          </a>
         )
       ]
     )
