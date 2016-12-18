@@ -1,5 +1,7 @@
-const config = require('zoro-kit/build/webpack.config.app')
+module.exports = function (options) {
+  const config = require('zoro-kit/build/webpack.config.app')(options)
 
-config.babel.plugins.push('transform-vue-jsx')
+  config.babel.plugins.push('transform-vue-jsx')
 
-module.exports = config
+  return config
+}
