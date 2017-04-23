@@ -1,6 +1,6 @@
 {
   "name": "zoro-kit-vue",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -42,18 +42,18 @@
   "dependencies": {
     "babel-helper-vue-jsx-merge-props": "^2.0.2",
     "babel-plugin-syntax-jsx": "^6.13.0",
-    "babel-plugin-transform-vue-jsx": "^3.2.0",
-    "eslint-config-standard-jsx": "^3.2.0",
-    "vue": "^2.1.4",
-    "vue-loader": "^10.0.2",
-    "vue-router": "^2.1.1",
-    "vue-template-compiler": "^2.1.4",
-    "vuex": "^2.0.0",
-    "vuex-router-sync": "^3.0.0"
+    "babel-plugin-transform-vue-jsx": "^3.4.2",
+    "eslint-config-standard-jsx": "^4.0.1",
+    "vue": "^2.2.6",
+    "vue-loader": "^11.3.4",
+    "vue-router": "^2.4.0",
+    "vue-template-compiler": "^2.2.6",
+    "vuex": "^2.3.1",
+    "vuex-router-sync": "^4.1.2"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.4",
     "util": "^0.10.3",
-    "zoro-kit": "^0.0.58"
+    "zoro-kit": "^0.0.65"
   }
 }
