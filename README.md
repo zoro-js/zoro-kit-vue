@@ -1,5 +1,7 @@
 # zoro-kit-vue
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zorojs/zoro-kit-vue.svg)](https://greenkeeper.io/)
+
 ## TODO
 
 - guide/transitions
